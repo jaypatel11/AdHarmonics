@@ -1,6 +1,17 @@
+/*
+*	Assumption: The programming language is not Java. Java does not support unsigned
+*
+*/
 
-public class Factorial {
+unsigned long factorial (unsigned long n) 
+{ 
+return (n == 0) ? 1 : n * factorial(n - 1); 
+} 
 
+unsigned long combinatorial(unsigned long n, unsigned long k) 
+{ 
+return factorial(n) / ( factorial(k) * factorial(n-k) ); 
+} 
 
     private static long  factorial (long n)
     {
@@ -26,9 +37,4 @@ public class Factorial {
     }
 
 
-    public static void main(String args[]){
-
-        System.out.println(combinatorial(53,47));
-
-    }
 }
