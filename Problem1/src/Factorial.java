@@ -47,5 +47,3 @@ static unsigned long  betterCombinatorial(unsigned long n, unsigned long k)
 		return numerator/factorial(k);
 }
 
-
-}
