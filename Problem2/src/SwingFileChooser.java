@@ -140,6 +140,10 @@ public class SwingFileChooser extends JFrame{
 
     }
 
+    /*
+    * Function to create an instance of SwingFileChooser with a title for the window
+    *
+    * */
     public static void executeDisplay(final String title){
 
         Runnable r = new Runnable(){
@@ -151,6 +155,11 @@ public class SwingFileChooser extends JFrame{
         EventQueue.invokeLater(r);
 
     }
+
+    /*
+    *  Function which takes the path of excel and give it to handlers to insert into table
+    *
+    * */
 
     private void insertToTableFromSelectedFile(String absoluteFilePath) {
 
