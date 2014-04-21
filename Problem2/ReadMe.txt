@@ -10,7 +10,5 @@ Assumptions:
 Design:
 
 1. To process Excel files, I used external library called JExcelAPI. 
-2. When you choose folder, a dialog appears, which shows which folder you selected. From the selected folder, only ".xls" files are considered. 
-   When you click ok, a number of threads equal to the number of xls files to be processed are spawned. Each thread has its own connection instance to the database. 
-3. Another thread is spawned, which checks if all the threads processing xls files have finished. If done, this thread pops up a dialog box 
-   stating the task is finished
+2. When you choose folder, a dialog appears, which shows which folder you selected. From the selected folder, only ".xls" files are considered. When you click ok, a number of threads equal to the number of xls files to be processed are spawned. Each thread has its own connection instance to the database.
+3. Another thread is spawned, which checks if all the threads processing xls files have finished. If done, this thread pops up a dialog box  stating the task is finished
